@@ -55,13 +55,10 @@ public class DistributeClient {
 
 		for (String child : children) {
 			byte[] data = zkClient.getData("servers/" + child, false, null);
-
 			hosts.add(new String(data));
 		}
-
 		// 将所有在线主机名称打印到控制台
 		System.out.println(hosts);
-
 	}
 
 	private void business() throws Exception {
