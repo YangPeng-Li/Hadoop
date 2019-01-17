@@ -17,7 +17,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
  * @date 2018年1月17日
  * @version 1.0
  *
- *flowcount.txt是输入文件
+ *flowcount.txt是输入文件 对文件格式有要求有错误则运行有错误，坑很多。。。
  *"D:/io/inputflow",
  *"d:/output2
  *
