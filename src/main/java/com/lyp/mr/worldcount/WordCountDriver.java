@@ -13,7 +13,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class WordCountDriver {
 	public static void main(String[] args) throws IOException, ReflectiveOperationException, InterruptedException {
-		// 1 获取配置信息以及封装任务
+			// 1 获取配置信息以及封装任务
 				Configuration configuration = new Configuration();
 				Job job = Job.getInstance(configuration);
 
