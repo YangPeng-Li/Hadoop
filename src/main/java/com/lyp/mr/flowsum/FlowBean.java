@@ -10,6 +10,8 @@ import org.apache.hadoop.io.Writable;
  * 手机 上下行流量统计 
  * 号码为k 流量为v
  * 
+ * 自定义bean 需要实现Writable接口
+ * 
  * @author Lyp
  * @date 2018年1月17日
  * @version 1.0
