@@ -38,7 +38,6 @@ public class WholeFileReader extends RecordReader<Text,BytesWritable>{
 		//≥ı ºªØ
 		fileSplit = (FileSplit) split;
 		config=context.getConfiguration();
-		
 	}
 	
 	@Override

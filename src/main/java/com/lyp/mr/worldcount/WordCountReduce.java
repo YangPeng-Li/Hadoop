@@ -12,7 +12,7 @@ import org.apache.hadoop.mapreduce.Reducer;
  * VALUEIN, map阶段输出的value
  * KEYOUT,
  * VALUEOUT
- * 
+ * 运行在Map 之后
  * @author Lyp
  * @date 2019年1月16日
  * @version 1.0

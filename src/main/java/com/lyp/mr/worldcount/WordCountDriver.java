@@ -34,9 +34,13 @@ public class WordCountDriver {
 				job.setOutputKeyClass(Text.class);
 				job.setOutputValueClass(IntWritable.class);
 				//必须放在输出之后
-				job.setInputFormatClass(CombineTextInputFormat.class);//改变默认的切片的模式
-				CombineTextInputFormat.setMaxInputSplitSize(job, 20971520);//切片大小设置为20M
-				//2019-01-17 22:49:51,830 INFO [org.apache.hadoop.mapreduce.JobSubmitter] - number of splits:1 	1片	
+//				job.setInputFormatClass(CombineTextInputFormat.class);//改变默认的切片的模式
+//				CombineTextInputFormat.setMaxInputSplitSize(job, 20971520);//切片大小设置为20M
+				//2018-01-17 22:49:51,830 INFO [org.apache.hadoop.mapreduce.JobSubmitter] - number of splits:1 	1片	
+				
+				//设置ReduceTask 个数
+				job.setNumReduceTasks(2);
+				
 				
 				// 6 设置输入和输出路径
 				FileInputFormat.setInputPaths(job, new Path(args[0]));

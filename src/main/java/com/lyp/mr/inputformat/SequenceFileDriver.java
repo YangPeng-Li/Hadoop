@@ -24,7 +24,10 @@ public class SequenceFileDriver {
 		job.setMapperClass(SequenceFileMapper.class);
 		job.setReducerClass(SequenceFileReducer.class);
 		
+		
+		//7.设置输入inputFormat
 		job.setInputFormatClass(WholeFileInputformat.class);
+		//设置输出out
 		job.setOutputFormatClass(SequenceFileOutputFormat.class);
 		
 		job.setMapOutputKeyClass(Text.class);
